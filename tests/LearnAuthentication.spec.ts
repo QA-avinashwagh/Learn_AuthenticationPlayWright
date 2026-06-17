@@ -1,4 +1,4 @@
-import { test, expect } from "../fixtures/BaseFixture"
+import { test } from "../fixtures/BaseFixture"
 
 test('Basic UI Authentication test', async ({ loginPage, homePage }) => {
 
@@ -8,5 +8,3 @@ test('Basic UI Authentication test', async ({ loginPage, homePage }) => {
     await homePage.isheaderUserNameIsVisible("Max M Thompson");
 
 })
-
-
