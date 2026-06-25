@@ -1,0 +1,114 @@
+{
+  "cookies": [
+    {
+      "name": "care_coordinations_session",
+      "value": "eyJpdiI6IisxMXFtblAxQ2NYYnhTQi84eU5ZZmc9PSIsInZhbHVlIjoiNG04bGZkSnZBV2Fob25YVXJwWk42MklGL2krVXZpcEkyU0hGbTBBVkxwZUE0RWJhSWgwTjJtQ3E2bTN5NlpXMXdYaU9TL3EvL3ZCL1d1VWswWnpLNzVXbFlEMlRBaFA0MlZYVk5rREIvS2RCckh1VWxpRHhwS2R6S0ZIYTZOTFEiLCJtYWMiOiI2ZjQ4MGMwMWNkYWQyNjNmZjVlZTQzMmVmMmZhNTMwZmJmZmU5MDFmYTlkMzg3MjcxNjg3Nzg5ZTJjMWQ1MTMxIiwidGFnIjoiIn0%3D",
+      "domain": "uat.carecoordinations.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "Vlk0cn78wgM_.G7CXP8S_gvCgk1XNSkzHLADepIpwVw-1782300626.8798676-1.0.1.1-fnPL9VSGkRHN5iXcDebT7kSNx3sJdOqHYd6FFciPdsaEHg9Hn1oVY_YuFqM06_y1MCC3iajPTFOPx_RmLJoPyworEvyC8UPksWRAfvxQxfpFyEmarACcMJmsVp2sTqLi",
+      "domain": ".hs-scripts.com",
+      "path": "/",
+      "expires": 1782302428.085781,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "Hd6wyb8ix7UmFZjNtjazDdmhC9JAlIJLwomsPdyuJQ4-1782300627.7987328-1.0.1.1-SMzXOBI9KtjAlg2oQMvb6ltGeW4UWDubQZWg9_WuwZSD42i1ZFrxa0Egld.KlW6lgeFeLiBc73CTsH1nQS5MBXw5T4.xf7clMPpg7j8JCn7A8An8B4sNJjpJP3LZtI04",
+      "domain": ".hs-banner.com",
+      "path": "/",
+      "expires": 1782302428.773811,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "krFnHVtABxeM.R2P1ZNUdnXNnQI4pJ9AaLQzW7.QLNA-1782300627.822796-1.0.1.1-A.BFXOUTuUCbaJsJCvP3rPmt0uLTtIW4gujhoWHOsz9GOt3FIUyNAgpq.VHbJjmsaNFV9QmiGAeXTkY2F.qSmOudJWSnxv0Bn09Gcr.VgvlPwV_mV4tliCuA5WC.zohW",
+      "domain": ".hs-analytics.net",
+      "path": "/",
+      "expires": 1782302428.839547,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "xUC_Y80.M4Xeek1P8Pz0mZGyvhKp9WI44r8a7NUYA1s-1782300628.4358726-1.0.1.1-8jzmlclrVqnbvTRk00Lv3rrlIbsbOplrovCAPg5swvwBsfSKt4V9jsyEQQG7hBQG4pJSskdq6atPCKYhkuGx7fqzYD8TdUIBHlg496C0v.ZYy44wLTNIGAmiKnzN33qH",
+      "domain": ".hsforms.com",
+      "path": "/",
+      "expires": 1782302429.65402,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__hstc",
+      "value": "120676695.602ac94c4112ee5315b33105a4c8cade.1782300630017.1782300630017.1782300630017.1",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1797852630,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "hubspotutk",
+      "value": "602ac94c4112ee5315b33105a4c8cade",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1797852630,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__hssrc",
+      "value": "1",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__hssc",
+      "value": "120676695.1.1782300630018",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1782302430,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://uat.carecoordinations.com",
+      "localStorage": [
+        {
+          "name": "li_submission",
+          "value": "{\"formSelectorId\":\"#sign_up_form\",\"formSelectorClasses\":\".sign_up_form, .sign_up_formLogin\",\"formAttributes\":{\"id\":\"sign_up_form\",\"class\":\"sign_up_form sign_up_formLogin\",\"action\":\"https://uat.carecoordinations.com/login\"},\"contactFields\":{\"email\":{\"label\":\"Email address\",\"name\":\"email\",\"value\":\"joy.manager@yopmail.com\",\"type\":\"email\",\"attributes\":{}}},\"fields\":[],\"pageTitle\":\"Login | Care Coordinations Platform\",\"pageUrl\":\"https://uat.carecoordinations.com/login\",\"portalId\":24023296,\"token\":1164286246,\"type\":\"SCRAPED\",\"utk\":\"602ac94c4112ee5315b33105a4c8cade\",\"uuid\":\"5bc434dd-d1cf-484d-bd62-ecbcfff3dff1\",\"version\":\"collected-forms-embed-js-static-1.4851\"}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "a3Z0bHR6MWNtZWVyaA=="
+        }
+      ]
+    }
+  ]
+}

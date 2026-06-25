@@ -1,0 +1,124 @@
+{
+  "cookies": [
+    {
+      "name": "__cf_bm",
+      "value": "b7Af.g2u5XOtKKj_xueC.gdFQy3D9sOCqUwK.GvxIpk-1782300626.4284182-1.0.1.1-DMrgb9IO2KV_a2yh3QmeQz8fyOww1jf2vGA70OX4OoWBu5H3qwBHWCav2tmi4BSz3tuLjy6snsMe9Mcdmz9oXCBIaNvYbKmJiJSiolyVv24FhRYVfdB6P2p3ptY8_Ns.",
+      "domain": ".hs-scripts.com",
+      "path": "/",
+      "expires": 1782302427.627959,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "GB9S.56EKamRVr.a95ufBWd8NvBQH7rOkid9_5nBLCk-1782300627.3858094-1.0.1.1-a2FXg9xEVgQykoA9TIfiksp6q31h8rJe3MQ1x1flb7NUqRBrHOlcTpi0b0acscUWQQgDLTdV2DjRwpINb_O26glZGI6O4vdrnHlCCKwc5a_iFfV0zG0sZbPcHn163sgi",
+      "domain": ".hs-analytics.net",
+      "path": "/",
+      "expires": 1782302428.371329,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "lOyaiziOJTmnmXDfcD4rshLETASJt2Zi85WPWy_XwiI-1782300627.4077914-1.0.1.1-WGPhaXA_omY730YHmYAG0m3XpwHQWML2TwySjMhPIiR6KKE0x4H7xUTgFCXIOwyB..FLxedEX4QLhEXvjHx9oT1P3jckoe0jQsguu2YCtl1OClQlGQS2dogl_._n_D8Z",
+      "domain": ".hs-banner.com",
+      "path": "/",
+      "expires": 1782302428.393211,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "_E5D4tiT0qZjwvGpVWeSP9WzI.sm859VIgpIy_YKykI-1782300628.129535-1.0.1.1-i6l3_2DfoHiYMVLIXoB5iwhe7RwBtHxBzs8p0mHqQs3ft4IFn.XDpuFmVo5zfm8NsQuCLo0pDHpcYyDlGXM7kH_FMIgp.RljtsPYPFC79pGrQgDZp.ICbVY3PtbD2w9q",
+      "domain": ".hsforms.com",
+      "path": "/",
+      "expires": 1782302429.335652,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__hstc",
+      "value": "120676695.70bdd244aa6986946e7156ed4fddf632.1782300629553.1782300629553.1782300629553.1",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1797852629,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "hubspotutk",
+      "value": "70bdd244aa6986946e7156ed4fddf632",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1797852629,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__hssrc",
+      "value": "1",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__hssc",
+      "value": "120676695.1.1782300629553",
+      "domain": ".carecoordinations.com",
+      "path": "/",
+      "expires": 1782302429,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "BkGF60PpgIr7cc05bPryHf6090mO7fV7Z7t5qlHGwtE-1782300629.147085-1.0.1.1-CBcNTYQlFYfRGo3jwnajTiJWp1C9xbLDji8oSBoqhewuUd_WnhWMOnIqefuJUEaterFGmvmeucJ6oApQ9nI4mGFnX4AMGE2mulPUcSeRFxrGfj4wkr07maXIsxrkF.xg",
+      "domain": ".hubspot.com",
+      "path": "/",
+      "expires": 1782302430.440962,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "care_coordinations_session",
+      "value": "eyJpdiI6InlIOWhUT1M2enR3S3Q2S0Q5K0U3UlE9PSIsInZhbHVlIjoicWx4QTdnTHRtdmx4ZHAwdTdDaWRScGZza05JRGUxM1NIU2lTcUk3QXhYZXRkdHhCOVIxNy81bWZtamcwM2hLSGFFK2hxRWd2NnBxdGRWcWV6U2hIRkwyYXo2RGFvb0tnTEh6RTFkYTFYMjJKNXZIcnhrUXlGWjJCM1IwalJXRk0iLCJtYWMiOiI1NWQ3MjU1M2NkYzcyNThkYzIwY2U2YWQ3ZGJmZTY3YWM1NWExYjU1N2IxYmI1NjVlNzlkYzk4ZjMwNWJhNjkwIiwidGFnIjoiIn0%3D",
+      "domain": "uat.carecoordinations.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://uat.carecoordinations.com",
+      "localStorage": [
+        {
+          "name": "li_submission",
+          "value": "{\"formSelectorId\":\"#sign_up_form\",\"formSelectorClasses\":\".sign_up_form, .sign_up_formLogin\",\"formAttributes\":{\"id\":\"sign_up_form\",\"class\":\"sign_up_form sign_up_formLogin\",\"action\":\"https://uat.carecoordinations.com/login\"},\"contactFields\":{\"email\":{\"label\":\"Email address\",\"name\":\"email\",\"value\":\"max.admin@yopmail.com\",\"type\":\"email\",\"attributes\":{}}},\"fields\":[],\"pageTitle\":\"Login | Care Coordinations Platform\",\"pageUrl\":\"https://uat.carecoordinations.com/login\",\"portalId\":24023296,\"token\":1164286246,\"type\":\"SCRAPED\",\"utk\":\"70bdd244aa6986946e7156ed4fddf632\",\"uuid\":\"312abeb0-0c41-42ba-a648-8c0d5768cd48\",\"version\":\"collected-forms-embed-js-static-1.4851\"}"
+        }
+      ]
+    },
+    {
+      "origin": "https://www.google.com",
+      "localStorage": [
+        {
+          "name": "rc::a",
+          "value": "cmZ1MW9jNzJkamI2"
+        }
+      ]
+    }
+  ]
+}

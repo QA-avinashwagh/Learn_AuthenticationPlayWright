@@ -1,12 +1,11 @@
 import { expect, test as base, Page } from "@playwright/test"
-import { LoginPage } from "../pages/LoginPage";
 import { HomePage } from "../pages/HomePage";
 
 type AuthFixture = {
 
     systemAdminPage: {homePage : HomePage};
-    mangerSupervisiorPage: {loginPage : LoginPage, homePage : HomePage};
-    clearicalStaff: {loginPage : LoginPage, homePage : HomePage};
+    mangerSupervisiorPage: {homePage : HomePage};
+    clearicalStaff: {homePage : HomePage};
 
 }
 
@@ -28,11 +27,9 @@ export const test = base.extend<AuthFixture>({
         const context = await browser.newContext({ storageState: 'auth/managerSupervisior.json' })
         const page = await context.newPage();
 
-        
-        const loginPage = new LoginPage(page)
         const homePage = new HomePage(page);
 
-        await use({loginPage, homePage});
+        await use({homePage});
         await context.close();
     },
 
@@ -41,10 +38,9 @@ export const test = base.extend<AuthFixture>({
         const context = await browser.newContext({ storageState: 'auth/clearicalStaff.json' })
         const page = await context.newPage();
         
-        const loginPage = new LoginPage(page)
         const homePage = new HomePage(page);
         
-        await use({loginPage, homePage});
+        await use({homePage});
         await context.close();
     }
 
