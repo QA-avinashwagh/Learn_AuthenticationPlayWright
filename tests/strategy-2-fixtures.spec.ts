@@ -1,13 +1,25 @@
-import {expect, test} from "../fixtures/AuthRoleFixture"; 
+import {test} from "../fixtures/AuthRoleFixture"; 
 
 
-
-test("Colobration work flow check ", async({systemAdminPage})=>{
+test("Indiviudal user flow check for admin  ", async({systemAdminPage})=>{
 
     await systemAdminPage.homePage.navigateToHome();
     await systemAdminPage.homePage.isHomeTabVisbile();
     await systemAdminPage.homePage.isheaderUserNameIsVisible("Max M Thompson");
+})
 
 
+test("Indiviudal user flow check for manger ", async({mangerSupervisiorPage})=>{
 
+    await mangerSupervisiorPage.homePage.navigateToHome();
+    await mangerSupervisiorPage.homePage.isHomeTabVisbile();
+    await mangerSupervisiorPage.homePage.isheaderUserNameIsVisible("Max M Thompson");
+})
+
+
+test("Indiviudal user flow check for clerical ", async({clearicalStaff})=>{
+
+    await clearicalStaff.homePage.navigateToHome();
+    await clearicalStaff.homePage.isHomeTabVisbile();
+    await clearicalStaff.homePage.isheaderUserNameIsVisible("Max M Thompson");
 })
