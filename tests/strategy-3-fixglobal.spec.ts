@@ -1,4 +1,4 @@
-import {test} from "../fixtures/AuthRoleFixture"; 
+import {test} from "../fixtures/SecureFixture"; 
 
 
 test("Indiviudal user flow check for admin  ", async({systemAdminPage})=>{
