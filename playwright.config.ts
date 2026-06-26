@@ -47,7 +47,13 @@ export default defineConfig({
       testIgnore: /auth\.setup\.ts/,  // ◄── IGNORE the setup script so it doesn't run as a normal test
     },
 
-
+    // ENVIRONMENT C: LUDICROUS SPEED API SUITES (Strategy 4)
+    {
+      name: 'strategy4-api',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /strategy-4-api\.spec\.ts/, 
+      testIgnore: /auth\.setup\.ts/,
+    }
   ]
     
 });
