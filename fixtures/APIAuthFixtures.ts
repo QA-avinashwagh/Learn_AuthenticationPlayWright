@@ -1,12 +1,15 @@
-import { test as base, expect, Browser, APIRequestContext } from "@playwright/test";
+import { test as base, expect, Browser, APIRequestContext, BrowserContext } from "@playwright/test";
 import { HomePage } from "../pages/HomePage";
 
 type APIAuthFixtures = {
     apiAdminPage: { homePage: HomePage };
+    apiMangerPage: { homePage: HomePage };
+    apiClericalPage: { homePage: HomePage };
 };
 
-async function createAuthenticatedContext(browser: Browser, request: APIRequestContext, email: string, password: string): Promise<context> {
-    // 1. Send the background sign-in request
+// Heler Method : Headlessly hits the signin API, extracts the cookie safely, and returns a pre-authenticated context
+async function createAuthenticatedContext(browser: Browser, request: APIRequestContext, email: string, password: string): Promise<BrowserContext> {
+    // 1. Hit the signin API endpoint with the provided credentials and capture the response
     const response = await request.post("https://uat.carecoordinations.com/signin", {
         data: {
             email: email,
@@ -14,13 +17,12 @@ async function createAuthenticatedContext(browser: Browser, request: APIRequestC
         }
     });
 
-    // Fail fast if the endpoint itself fails
+    // Validate that the response is successful and contains the expected cookies
     expect(response.ok()).toBeTruthy();
 
-    // 2. Provision an completely pristine, isolated browser profile context container
     const context = await browser.newContext();
 
-    // 3. SAFE ENTERPRISE PATTERN: Extract cookies cleanly using response.headersArray()
+    // 2. Extract the 'Set-Cookie' headers from the response
     const headers = response.headersArray();
     const setCookieHeaders = headers.filter(h => h.name.toLowerCase() === 'set-cookie');
 
@@ -45,7 +47,7 @@ async function createAuthenticatedContext(browser: Browser, request: APIRequestC
         };
     });
 
-    // 4. Inject the parsed cookie array directly into browser memory
+    // 3. Inject the cookies into the new browser context to simulate an authenticated session
     await context.addCookies(cookiesToInject);
     return context; // Return the fully authenticated context for further use
 }
@@ -54,24 +56,34 @@ async function createAuthenticatedContext(browser: Browser, request: APIRequestC
     export const test = base.extend<APIAuthFixtures>({
         apiAdminPage: async ({ browser, request }, use) => {
 
-            // 1. Send the background sign-in request
-            const response = await request.post("https://uat.carecoordinations.com/signin", {
-                data: {
-                    email: 'max.admin@yopmail.com',
-                    password: 'Admin@1234'
-                }
-            });
-
-
-            // 5. Initialize Page Instance and hand over control to the active test scope
+            const context = await createAuthenticatedContext(browser, request, "max.admin@yopmail.com", "Admin@1234");
             const page = await context.newPage();
             const homePage = new HomePage(page);
 
             await use({ homePage });
+            await context.close();
+        }, 
 
-            // 6. Graceful cleanup sequence
+        apiMangerPage: async ({ browser, request }, use) => {
+
+            const context = await createAuthenticatedContext(browser, request, "joy.manager@yopmail.com", "Admin@1111");
+            const page = await context.newPage();
+            const homePage = new HomePage(page);
+
+            await use({ homePage });
+            await context.close();
+        }, 
+
+        apiClericalPage: async ({ browser, request }, use) => {
+
+            const context = await createAuthenticatedContext(browser, request, "edwin.cstaff@yopmail.com", "Admin@111");
+            const page = await context.newPage();
+            const homePage = new HomePage(page);        
+        
+            await use({ homePage });
             await context.close();
         }
+
     });
 
     export { expect };
