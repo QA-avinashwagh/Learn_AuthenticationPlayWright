@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:strategy2": "npx playwright test --project=strategy2-chromium --headed",
-    "test:strategy3": "npx playwright test --project=strategy3-chromium --headed"
+    "test:strategy1": "npx playwright test --project=strategy1-UI-chromium --headed",
+    "test:strategy2": "npx playwright test --project=strategy2-Fixtures-chromium --headed",
+    "test:strategy3": "npx playwright test --project=strategy3-FixturesGlobal-chromium --headed",
+    "test:strategy4": "npx playwright test --project=strategy4-ApiAuth-chromium --headed"
   },
   "keywords": [],
   "author": "",

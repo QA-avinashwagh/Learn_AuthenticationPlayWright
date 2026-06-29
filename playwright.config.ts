@@ -31,7 +31,7 @@ export default defineConfig({
     // ENVIRONMENT A: PURE UI Run (Strategy 1)
     // These run immediately without triggering the global setup script!
     {
-      name: 'strategy1-chromium',
+      name: 'strategy1-UI-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-1-ui-login\.spec\.ts/, // Only look inside Strategy 1 folder
       // Notice: NO dependencies array here! It bypasses the setup phase entirely.
@@ -40,7 +40,7 @@ export default defineConfig({
     // ENVIRONMENT B: PURE FIXTURE RUNS (Strategy 2)
     // These run immediately without triggering the global setup script!
     {
-      name: 'strategy2-chromium',
+      name: 'strategy2-Fixtures-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-2-fixtures\.spec\.ts/, // Only look inside Strategy 2 folder
       // Notice: NO dependencies array here! It bypasses the setup phase entirely.
@@ -49,7 +49,7 @@ export default defineConfig({
     //  ENVIRONMENT C: GLOBAL PIPELINE RUNS (Strategy 3)
     // These are tightly bound to wait for the setup project to run first! 
     {
-      name: 'strategy3-chromium',
+      name: 'strategy3-FixturesGlobal-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch : /strategy-3-fixglobal\.spec\.ts/, 
       dependencies: ['setup'],        // ◄── WAIT for setup to finish before starting!
@@ -58,7 +58,7 @@ export default defineConfig({
 
     // ENVIRONMENT D: LUDICROUS SPEED API SUITES (Strategy 4)
     {
-      name: 'strategy4-api',
+      name: 'strategy4-ApiAuth-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-4-api\.spec\.ts/, 
       testIgnore: /auth\.setup\.ts/,
