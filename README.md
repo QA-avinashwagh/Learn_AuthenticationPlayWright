@@ -87,14 +87,21 @@ export default defineConfig({
     },
 
     {
-      name: 'strategy2-chromium',
+      name: 'strategy1-UI-chromium',
+      use: { ...devices['Desktop Chrome'] },
+      testMatch: /strategy-1-ui\.spec\.ts/,
+      testIgnore: /auth\.setup\.ts/,
+    },
+
+    {
+      name: 'strategy2-Fixtures-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-2-fixtures\.spec\.ts/,
       testIgnore: /auth\.setup\.ts/,
     },
 
     {
-      name: 'strategy3-chromium',
+      name: 'strategy3-FixturesGlobal-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-3-global\.spec\.ts/,
       dependencies: ['setup'],
@@ -102,7 +109,7 @@ export default defineConfig({
     },
 
     {
-      name: 'strategy4-api',
+      name: 'strategy4-ApiAuth-chromium',
       use: { ...devices['Desktop Chrome'] },
       testMatch: /strategy-4-api\.spec\.ts/,
       testIgnore: /auth\.setup\.ts/,
@@ -115,10 +122,10 @@ export default defineConfig({
 
 ```json
 "scripts": {
-  "test:strategy1": "npx playwright test tests/strategy-1-ui.spec.ts --headed",
-  "test:strategy2": "npx playwright test --project=strategy2-chromium --headed",
-  "test:strategy3": "npx playwright test --project=strategy3-chromium",
-  "test:strategy4": "npx playwright test --project=strategy4-api"
+  "test:strategy1": "npx playwright test --project=strategy1-UI-chromium --headed",
+  "test:strategy2": "npx playwright test --project=strategy2-Fixtures-chromium --headed",
+  "test:strategy3": "npx playwright test --project=strategy3-FixturesGlobal-chromium --headed",
+  "test:strategy4": "npx playwright test --project=strategy4-ApiAuth-chromium --headed"
 }
 ```
 
